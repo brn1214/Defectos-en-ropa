@@ -1,0 +1,29 @@
+# El siguiente es un ejemplo del template de cómo se almacenan las imagenes con su categoría y el bbox
+
+{
+   "image_url":"azureml://subscriptions/<my-subscription-id>/resourcegroups/<my-resource-group>/workspaces/<my-workspace>/datastores/<my-datastore>/paths/<path_to_image>",
+   "image_details":{
+      "format":"image_format",
+      "width":"image_width",
+      "height":"image_height"
+   },
+   "label":[
+      {
+         "label":"class_name_1",
+         "topX":"xmin/width",
+         "topY":"ymin/height",
+         "bottomX":"xmax/width",
+         "bottomY":"ymax/height",
+         "isCrowd":"isCrowd"
+      },
+      {
+         "label":"class_name_2",
+         "topX":"xmin/width",
+         "topY":"ymin/height",
+         "bottomX":"xmax/width",
+         "bottomY":"ymax/height",
+         "isCrowd":"isCrowd"
+      },
+      "..."
+   ]
+}
