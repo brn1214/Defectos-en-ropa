@@ -35,4 +35,4 @@ for epoch in range(num_epochs):
         train_loss += losses.item()
  
     print(f'Epoch: {epoch + 1}, Loss: {train_loss / len(train_loader)}')
-print("Training complete!")
+print("Entrenamiento completado")
