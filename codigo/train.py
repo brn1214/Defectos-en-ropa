@@ -1,3 +1,6 @@
+# Cargar el modelo Faster R-CNN con backbone ResNet-50 
+model = fasterrcnn_resnet50_fpn(pretrained=True)
+
 # Verificar si se puede trabajar con CUDA
 device = torch.device('cuda') if torch.cuda.is_available() 
                                else torch.device('cpu')
