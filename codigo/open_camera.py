@@ -23,6 +23,11 @@ while True:
     ##########################################################################
 
     # En esta sección se puede cargar el modelo que va a analizar cada frame e identificar defectos
+    model(frame)
+
+    calcular_bbox()
+
+    mostrar_bbox()
   
     ##########################################################################
 
